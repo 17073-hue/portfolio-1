@@ -1,0 +1,204 @@
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
+
+/* ===== ตั้งค่าพื้นฐาน ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Kanit',sans-serif;
+    background:#FFF8F3;
+    color:#444;
+    line-height:1.8;
+}
+
+/* ===== เมนู ===== */
+header{
+    background:#FFB26B;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+nav{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#FFE8CC;
+}
+
+/* ===== Hero ===== */
+.hero{
+    min-height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.profile{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #FFB26B;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:50px;
+    color:#FF914D;
+}
+
+.hero h2{
+    font-size:35px;
+    margin:10px 0;
+}
+
+.hero span{
+    color:#FF914D;
+}
+
+.hero p{
+    max-width:650px;
+    margin:20px 0;
+    color:#666;
+}
+
+/* ===== ปุ่ม ===== */
+.btn{
+    display:inline-block;
+    background:#FF914D;
+    color:white;
+    text-decoration:none;
+    padding:14px 35px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#FF7A1A;
+    transform:translateY(-3px);
+}
+
+/* ===== Section ===== */
+section{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:80px 0;
+}
+
+section h2{
+    text-align:center;
+    color:#FF914D;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+/* ===== Card ===== */
+.card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    margin:20px 0;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(255,145,77,.25);
+}
+
+.card h3{
+    color:#FF914D;
+    margin-bottom:10px;
+}
+
+/* ===== Contact ===== */
+#contact p{
+    text-align:center;
+    font-size:18px;
+    margin:10px;
+}
+
+/* ===== Footer ===== */
+footer{
+    background:#FFB26B;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:8px 12px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero h2{
+        font-size:26px;
+    }
+
+    .profile{
+        width:150px;
+        height:150px;
+    }
+
+    section h2{
+        font-size:30px;
+    }
+}
